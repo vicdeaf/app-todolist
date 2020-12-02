@@ -1,48 +1,47 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sansita+Swashed&display=swap');
 
 body {
     background-color: #69ADA9;
-    margin : auto; 
 }
 
-.title {
-    font-size:36px;  
-    width:50%; 
-    margin:auto;
-    text-align:center; 
-    color: white; 
-    font-family: 'Sansita Swashed', cursive;
-    margin-right:15px; 
-}
-
-h2 {
-    font-size:36px;  
-}
 
 #list-travel {
   
     display: flex; 
     justify-content: space-around;
-    width:50%; 
-    height:90vh;    margin : auto; 
+    width:100%; 
+    height:90vh;   
+    margin : auto; 
 }
 
+.title {
+    font-size:30px;  
+    width:50%; 
+    margin:auto;
+    text-align:right; 
+    color: white; 
+    font-family: 'Sansita Swashed', cursive;
+    margin-right:15px; 
+}
 
 .app-travel {
+    width:50%; 
+    margin:auto; 
+}
+
+#container {
     background-color: #EFEFEF; 
     width:50%; 
     height:80vh; 
     border-radius:30px; 
-    margin:auto; 
+    margin:auto;
 }
-
-
 
 .formulaire {
     width:100%; 
+    height:20%; 
     margin:auto;
     display: flex; 
     justify-content: space-around;
@@ -72,13 +71,6 @@ button {
     font-size:25px; 
 }
 
-.list-travel1 {
-width:100%;
-height: 52%;
-margin-top:10%; 
-background: rgba(251, 251, 251, 0.83);
-border-radius: 30px;
-}
 
 footer {
    margin:auto;
@@ -89,3 +81,13 @@ footer {
    font-family: 'Merriweather', serif;
 
 }
+
+
+.list-travel1 {
+    width:100%;
+    height: 50%;
+    margin-top:10%; 
+    background: rgba(251, 251, 251, 0.83);
+    border-radius: 30px;
+}
+

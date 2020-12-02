@@ -13,40 +13,70 @@
 
 <body>
 
-<section id="list-travel">
+    <section id="list-travel">
 
     <div class="title">
         <h1>  Mini-application </h1>
         <h2> "Ma liste de voyage"</h2>
     </div>
-   
-<div class="app-travel">
 
-    <div class="app-travel2">
+
+    <div class="app-travel">
     
-        <div class="logo"> <img src="img/logo.png" width="100%" height="30%"/> </div>
+	    <div id="container">
+
+            <div id="app-travel" class="header">
+
+                <img src="img/logo.png" width="100%"/> 
+            
+                <div class="formulaire">
+                    <input type="text" id="myInput" placeholder="Où je peux y aller ?">
+                    <button onclick="newElement()" class="addBtn">+</button>
+                </div>
+
+             </div>
+
+             <div class="list-travel1">
+                <ul id="myUL">
+                
+                </ul>
+            </div>
         
-        <div class="formulaire">
-             <input type="text" id="MyInput" placeholder="Où veux-je aller?">
-             <button class="btn-add" onclick = "addCountry()" >  +  </button> 
         </div>
-    </div>
-
-    <div class="list-travel1">
-          <ul id="ul"> 
-              
-           </ul>
-    </div>
     
-</div>
+    </div>
 
 </section>
 
-<footer>
-    <p> &copy; 2020 - Victoria</p>
-</footer>
+        <footer>
+            <p> &copy; 2020 - Victoria</p>
+        </footer>
+ 
+ 
+<script>
+    
+    // Creér un nouveau élement lors du clic d'un bouton "Add"
 
-<script src="style.js"> </script> 
+
+    function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+  
+        if (inputValue === '') {
+            alert("You must write something!");
+        } else {
+        document.getElementById("myUL").appendChild(li);
+  }
+  
+  document.getElementById("myInput").value = "";
+
+}
+  
+
+
+ </script> 
 
 </body>
 <html>
